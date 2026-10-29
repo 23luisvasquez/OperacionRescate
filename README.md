@@ -114,16 +114,18 @@ Los errores de la versión final deben usar `application/problem+json` con `type
 
 ## Validador
 
-Si el docente entrega los scripts en `validador/`, ejecuta el validador con la API en marcha:
+El repositorio incluye dos validadores. Ejecútalos con la API en marcha.
+
+En Linux, macOS o Git Bash (requiere `curl` y `jq`):
 
 ```bash
 bash validador/validar.sh http://localhost:5000 ./logs
 ```
 
-En Windows con PowerShell:
+En Windows con PowerShell 7:
 
 ```powershell
-pwsh validador/validar.ps1 -BaseUrl http://localhost:5000 -LogsDir ./logs
+pwsh validador/validar.ps1 -BaseUrl http://localhost:5000 -LogDir ./logs
 ```
 
 El validador genera `reporte-validacion.json` en la raíz del repositorio.
