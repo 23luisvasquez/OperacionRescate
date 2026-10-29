@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>OperacionRescate.Api</RootNamespace>
+    <Description>API del laboratorio Operación Rescate.</Description>
   </PropertyGroup>
 
 </Project>
